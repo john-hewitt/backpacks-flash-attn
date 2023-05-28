@@ -105,9 +105,9 @@ These are the reference Backpack language models; the `Small` model is the model
 
 |     | Backpack  | Transformer |
 | --- | ---------| -----------|
-| Micro | (link)   | (link)     |
-| Mini | (link)   | (link)     |
-| Small| (link)   | (link)     |
+| Micro | [(link)](https://downloads.cs.stanford.edu/nlp/data/backpacks-acl2023/main/backpack-micro-flash-fp16.ckpt)   | [(link)](https://downloads.cs.stanford.edu/nlp/data/backpacks-acl2023/main/gpt2-micro-flash-fp16.ckpt)     |
+| Mini | [(link)](https://downloads.cs.stanford.edu/nlp/data/backpacks-acl2023/main/backpack-mini-flash-fp16.ckpt)   | [(link)](https://downloads.cs.stanford.edu/nlp/data/backpacks-acl2023/main/gpt2-mini-flash-fp16.ckpt)     |
+| Small| [(link)](https://downloads.cs.stanford.edu/nlp/data/backpacks-acl2023/main/backpack-small-flash-fp16.ckpt)   | [(link)](https://downloads.cs.stanford.edu/nlp/data/backpacks-acl2023/main/gpt2-small-flash-fp16.ckpt)     |
 
 
 #### Sense count ablation models
@@ -118,10 +118,10 @@ be avoided in favor of the models above.
 
 |     | Backpack |
 | --- | ---------|
-| 1   | (link)   |
-| 4   | (link)   |
-| 16  | (link)   |
-| 64  | (link)   |
+| 1   | [(link)](https://downloads.cs.stanford.edu/nlp/data/backpacks-acl2023/sense_ablation/backpack-mini-flash-fp16-vecs-1.ckpt)   |
+| 4   | [(link)](https://downloads.cs.stanford.edu/nlp/data/backpacks-acl2023/sense_ablation/backpack-mini-flash-fp16-vecs-4.ckpt)   |
+| 16  | [(link)](https://downloads.cs.stanford.edu/nlp/data/backpacks-acl2023/sense_ablation/backpack-mini-flash-fp16-vecs-16.ckpt)   |
+| 64  | [(link)](https://downloads.cs.stanford.edu/nlp/data/backpacks-acl2023/sense_ablation/backpack-mini-flash-fp16-vecs-64.ckpt)   |
 
 ## Experiment Replication
 
