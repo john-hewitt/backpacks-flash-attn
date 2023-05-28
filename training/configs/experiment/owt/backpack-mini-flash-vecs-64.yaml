@@ -1,0 +1,25 @@
+# @package _global_
+defaults:
+  - /experiment/owt/base.yaml
+  - override /model: backpack
+  - override /model/gpt2model: gpt2-mini
+
+model:
+  config:
+    # n_positions is already set to ${datamodule.max_length}
+    use_flash_attn: True
+    fused_bias_fc: True
+    fused_dense_gelu_dense: True
+    fused_dropout_add_ln: True
+    pad_vocab_size_multiple: 8
+    num_content_vectors: 64
+    shrink_final_inner: True
+
+trainer:
+  max_steps: 50000
+
+datamodule:
+  # batch_size: 64
+  batch_size: ${eval:"16 if ${train.gpu_mem} < 24 else (32 if ${train.gpu_mem} < 40 else 64)"}
+
+name: backpack-mini-flash-fp16-vecs-64-shrink

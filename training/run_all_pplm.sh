@@ -1,0 +1,2 @@
+for t in arts_culture business_entrepreneurs celebrity_pop_culture diaries_daily_life family fashion_style film_tv_video fitness_health food_dining gaming music news_social_concern other_hobbies relationships sports travel_adventure youth_student_life; do for step in 0.00; do sbatch --account nlp --partition jag-standard --gres gpu:1 --mem 20G do_pplm.sh $t $step; done; done
+#for t in sports travel_adventure youth_student_life; do for step in 0.05; do sbatch --account nlp --partition jag-standard --gres gpu:1 --mem 20G do_pplm.sh $t $step; done; done
