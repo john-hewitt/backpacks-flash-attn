@@ -1,18 +1,20 @@
 # Backpack Language Models (ACL 2023)
 
 This repository provides the code necessary to replicate the paper
-_Backpack Language Models_, the ACL 2023 paper. This includes both
+_[Backpack Language Models](https://arxiv.org/abs/2305.16765)_, the ACL 2023 paper. This includes both
 the training of the models and the subsequent evaluation.
 
 This is not necessarily the best way to use Backpacks.
 You may instead be looking for:
 
- - The [Huggingface Transformers model code](#) that implements Backpacks.
+ - The [Huggingface Transformers model code](https://huggingface.co/stanfordnlp/backpack-gpt2) that implements Backpacks.
  - The [Backpack Models website](https://backpackmodels.science)
 
 This codebase is a fork of the [FlashAttention](https://github.com/HazyResearch/flash-attention/) codebase, which has
 had some breaking changes since the fork. Thus, you'll need to install
 _this_ FlashAttention version.
+
+
 
 ## Using this codebase
 
@@ -268,3 +270,24 @@ To run an interactive script in which you can input prefixes like those we used 
 
 After running an initial script, it will iteratively accept prefixes and generate samples.
 You can look at the code to change the affected token.
+
+## Citation
+If you use this code or find the ideas useful, please cite the Backpacks paper as well as the FlashAttention paper!
+
+```
+@InProceedings{hewitt2023backpack,
+  author =      "Hewitt, John and Thickstun, John and Manning, Christopher D. and Liang, Percy",
+  title =       "Backpack Language Models",
+  booktitle =   "Proceedings of the Association for Computational Linguistics",
+  year =        "2023",
+  publisher =   "Association for Computational Linguistics",
+  location =    "Toronto, Canada",
+}
+
+@inproceedings{dao2022flashattention,
+  title={Flash{A}ttention: Fast and Memory-Efficient Exact Attention with {IO}-Awareness},
+  author={Dao, Tri and Fu, Daniel Y. and Ermon, Stefano and Rudra, Atri and R{\'e}, Christopher},
+  booktitle={Advances in Neural Information Processing Systems},
+  year={2022}
+}
+```
